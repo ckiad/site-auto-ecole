@@ -1,0 +1,78 @@
+export PATH=$PATH:/opt/java/jdk/bin:/opt/java/jre/bin
+export JAVA_HOME=/opt/java/jre/bin
+
+
+sudo chmod 755 xampp-linux-*-installer.run
+
+sudo ./xampp-linux-*-installer.run
+
+gksu /opt/lampp/manager-linux-x64.run
+
+sudo /opt/lampp/lampp start
+
+sudo /opt/lampp/lampp security
+
+sudo chmod -R 777 /opt/lampp/htdocs
+ou
+sudo chmod -R 777 /opt/lampp/htdocs/repertoire installation
+
+
+Pour que Xampp se lance au démarrage, il suffit d’exécuter les commandes suivantes dans un terminal:
+sudo ln -s /opt/lampp/lampp /etc/rc2.d/S99lampp
+sudo ln -s /opt/lampp/lampp /etc/rc1.d/K02lampp
+
+sudo /opt/lampp/lampp stop
+
+Vous pouvez créer un lien symbolique du fichier /opt/lampp/lampp dans le dossier /usr/bin :
+sudo ln -s /opt/lampp/lampp /usr/bin/lampp
+
+Dorénavant, vous pourrez utiliser les commandes :
+
+Pour démarrer le serveur : sudo lampp start
+
+Pour redémarrer le serveur :sudo lampp restart
+Pour sécuriser le serveur :sudo lampp security
+
+Pour arrêter le serveur :
+sudo lampp stop
+Pour accéder à la liste des options possibles :
+sudo lampp
+
+Pour lancer le panneau de contrôle (GUI) de XAMPP (comme sous Windows), utilisez cette commande :  gksu /opt/lampp/share/xampp-control-panel/xampp-control-panel
+
+
+Vous pouvez aussi faire la commande suivante pour avoir une interface plus agréable et plus complète:  gksu /opt/lampp/manager-linux-x64.run
+
+Pour désinstaller XAMPP, il faut simplement supprimer le dossier /opt/lampp :
+
+sudo rm -rf /opt/lampp
+En effet, XAMPP tient en un seul dossier indépendant.
+
+
+
+ wget -C url_du_fichier.tar.gz
+tar -zxvf fichier.tar.gz
+cp -rf./repertoire_du_logiciel /opt/
+
+Pour lancer le logiciel $ /opt/repertoire_logiciel/fichier_executable
+
+
+Dans le cas précis de Firefox, le fichier binaire étant depuis quelques années au format TAR.BZ2, la deuxième commande pour décompresser le fichier est différente :
+
+$ tar -jxvf fichier.tar.bz2
+
+Dans Firefox, le fichier exécutable s'appelle firefox comme le nom de son répertoire. Donc pour le lancer
+
+/opt/firefox/firefox
+
+
+sudo tar -xvf spring-tool-suite-3.7.0.RELEASE-e4.5-linux-gtk-x86_64.tar.gz
+
+
+cd /usr/local/android-studio/bin
+/usr/local/android-studio/bin $ ./studio.sh
+
+
+https://gitlab.com/users/sign_in
+
+

@@ -1,0 +1,18 @@
+#mainNav{
+    background: rebeccapurple !important;
+}
+
+#footnavbar{
+    background: rebeccapurple !important;
+}
+#mceu_30{
+    display: none !important;
+}
+.help-block{
+    text-align: center;
+    background-color: brown;
+    color: beige;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px;
+}
